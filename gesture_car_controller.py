@@ -1,22 +1,3 @@
-#!/usr/bin/env python3
-"""
-Hand Gesture Car Control (Final Improved Version)
--------------------------------------------------
-Technologies: OpenCV, MediaPipe, PyAutoGUI, NumPy
-
-Gestures → Actions:
- - Left Hand  (Open/Point)   → Accelerate (↑)
- - Right Hand (Open/Point)   → Brake (↓)
- - Move Hand Left/Right      → Steering (← →)
- - Both Hands Close Together → Nitro Boost (Space)
- - Fist                     → Idle (no action)
-
-Extras:
- - Live status HUD
- - On-screen legend (gesture guide box)
- - Smooth steering (smoothing buffer)
- - Clean key handling (no stuck keys)
-"""
 
 import cv2, mediapipe as mp, numpy as np, pyautogui, math
 from collections import deque
